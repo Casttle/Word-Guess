@@ -1,0 +1,9 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#playunderscore, #chosen {
+    text-align: center;
+    font-size: 26px;
+}
