@@ -1,4 +1,5 @@
-var words = ["stark", "lanister", "tyrell", "targaryen", "bolton", "frey", "baratheon",];
+var words = ["stark", "lanister", "tyrell", "targaryen", "bolton", "frey", "baratheon", "grayjoy","winter","blood",
+"wine"];
 var playWord;
 var startblock = true;
 var selected = [];

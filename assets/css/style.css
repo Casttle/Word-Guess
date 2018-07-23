@@ -1,9 +1,83 @@
+body{
+    text-shadow: 3px 3px black;
+    background-color: gray;
+    background-image: url("../images/game-of-thrones-game-of-thrones-house-parody.png");
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: red;
+}
+header {
+    background-color: black;
+    position: relative;
+}
+#banner{
+    margin-left: 130px;
+}
+
 h1 {
+    color: black;
+    font-family: "Permanent Marker", cursive;
     font-size: 50px;
-    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    -webkit-animation: hangman 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation: hangman 4s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes hangman {
+    from {left: 20px;}
+    to {left: 600px; color: rgb(189, 11, 11);}
+}
+
+@keyframes hangman {
+    from {left: 20px;}
+    to {left: 600px; color: rgb(189, 11, 11);}
 }
 
 #playunderscore, #chosen {
+    height: 80px;
+    font-family: "bevan", cursive;
     text-align: center;
-    font-size: 26px;
+    font-size: 70px;
+    padding: 30px 0
+}
+
+#scoreboard {
+    height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    font-family: "Chela One", cursive;
+}
+span {
+    padding-left: 10px;
+}
+li {
+    display: inline;
+    padding: 0 20px;
+}
+#startblock{
+    font-size: 70px;
+    font-family: "Permanent Marker", cursive;
+    position: relative;
+    bottom: -100px;
+    left: 100px;
+    opacity: 0;
+    -webkit-animation: anykey 4s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation: anykey 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; 
+}
+@-webkit-keyframes anykey {
+    from {left: 100px;bottom:-100px}
+    to {bottom: 0; opacity: 1;}
+}
+
+@keyframes anykey {
+    from {left: 100px; bottom:-100px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
 }
