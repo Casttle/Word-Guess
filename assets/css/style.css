@@ -18,7 +18,7 @@ header {
 h1 {
     color: black;
     font-family: "Permanent Marker", cursive;
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
     bottom: 20px;
     left: 50px;
@@ -28,13 +28,15 @@ h1 {
     animation-fill-mode: forwards;
 }
 @-webkit-keyframes hangman {
-    from {left: 20px;}
-    to {left: 600px; color: rgb(189, 11, 11);}
+    0% {left: 20px; bottom: 0; transform: rotate(0);}
+    90% {left: 550px;bottom: 0; color: rgb(189, 11, 11); transform: rotate(0);}
+    100% {left: 480px; bottom:60px; color: rgb(189, 11, 11); transform: rotate(-10deg); }
 }
 
 @keyframes hangman {
-    from {left: 20px;}
-    to {left: 600px; color: rgb(189, 11, 11);}
+    0% {left: 20px; bottom: 0; transform: rotate(0);}
+    90% {left: 550px;bottom: 0; color: rgb(189, 11, 11); transform: rotate(0);}
+    100% {left: 480px; bottom:60px; color: rgb(189, 11, 11); transform: rotate(-10deg); }
 }
 
 #playunderscore, #chosen {

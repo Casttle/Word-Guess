@@ -12,28 +12,33 @@
 </head>
 
 <body>
+
+
     <header>
         <img id="banner" src="assets/images/gotbanner.png" alt="banner">
-        <h1>Hangman</h1>
+        <h1>WORD-QUESS</h1>
 
     </header>
     <div id="scoreboard">
-            <ul>
-                <li>
-                    Wins:<span id="wins">0</span>
-                </li>
-        
-                <li>
-                    Losses:<span id="losses">0</span>
-                </li>
-        
-                <li style="padding-left: 300px;">
-                    Remaining Tries:<span id="guesses">10</span>
-                </li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                Wins:
+                <span id="wins">0</span>
+            </li>
 
-  
+            <li>
+                Losses:
+                <span id="losses">0</span>
+            </li>
+
+            <li style="padding-left: 300px;">
+                Remaining Tries:
+                <span id="guesses">10</span>
+            </li>
+        </ul>
+    </div>
+
+
 
     <div id="playunderscore"></div>
 
@@ -43,7 +48,14 @@
         Press Any Key to Play
     </div>
 
-
+    <audio src="assets/sounds/GoTDog.wav" id="theme"></audio>
+    <audio src="assets/sounds/Cheering-SoundBible.com-1115515042.wav" id="winsound"></audio>
+    <audio src="assets/sounds/Crowd Boo-SoundBible.com-929146967.wav" id="losssound"></audio>
+    <audio src="assets/sounds/metal-small2.wav" id="sword1"></audio>
+    <audio src="assets/sounds/metal-small3.wav" id="sword2"></audio>
+    <audio src="assets/sounds/Swordsmall.wav" id="sword3"></audio>
+    <audio src="assets/sounds/sword-unsheathe3.wav" id="sword4"></audio>
+    <audio src="assets/sounds/sword-unsheathe5.wav" id="sword5"></audio>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 
